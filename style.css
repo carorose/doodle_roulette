@@ -1,0 +1,112 @@
+body {
+	background-color:#A2DBFB
+}
+
+
+.art
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+height: 50%
+visibility:hidden;
+}
+
+.button
+{
+	left: 5px;
+	bottom: 40px;
+	position: absolute;
+	outline: none;
+	width: 20%;
+	height: auto;
+}
+
+@font-face {
+	font-family: coolvetica;
+	src: url("fonts/coolvetica/coolvetica.ttf");
+}
+
+.header
+{
+	background-color: #FB2B55;
+	font-size: 48px;
+	font-family: coolvetica;
+	color: #FFFFFF;
+	left: 0px;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+	line-height:.70em;
+	position: fixed;
+	width: auto;
+	display:inline-block;
+	
+}
+
+@font-face {
+	font-family: sunrise international;
+	src: url("fonts/sunrise_international/sunrise_international.otf");
+}
+
+#spinme {
+	font-size: 50px;
+	font-family: sunrise international;
+	color: #565657;
+	z-index: 1;
+	position: absolute;
+	left: 10%;
+	bottom: 0%;
+	-webkit-transform: rotate(335deg);
+	-moz-transform: rotate(335deg);
+	-ms-transform: rotate(335deg);
+	-o-transform: rotate(335deg);
+	transform: rotate(335deg);
+	
+}
+	
+
+#flag {
+  width: 130px;
+  height: 90px;
+  padding-left: 15px;
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+  background: #FB2B55;
+  color: #FFFFFF;
+  font-family: coolvetica;
+  font-size: 35px;
+  text-align: center;
+  line-height: .70em;
+  margin: 0px;
+  margin-top: 20px;
+}
+#flag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid #A2DBFB;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+}
+
+#info {
+	color: #FFFFFF;
+  font-family: sunrise international;
+  font-size: 25px;
+  position: absolute;
+  bottom: 0%;
+  right: 20%;
+  z-index: 1;
+  -webkit-transform: rotate(335deg);
+	-moz-transform: rotate(335deg);
+	-ms-transform: rotate(335deg);
+	-o-transform: rotate(335deg);
+	transform: rotate(335deg);
+}
+	
