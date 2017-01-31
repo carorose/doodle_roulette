@@ -2,20 +2,24 @@ body {
 	background-color:#A2DBFB
 }
 
+#doodle {
+	outline: none;
+	visibility: hidden;
+}
 
 .art
 {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
-height: 50%
-visibility:hidden;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+max-width: 50%;
+height: auto;
 }
 
 .button
 {
-	left: 5px;
+	left: 20px;
 	bottom: 40px;
 	position: absolute;
 	outline: none;
@@ -28,7 +32,7 @@ visibility:hidden;
 	src: url("fonts/coolvetica/coolvetica.ttf");
 }
 
-.header
+#header
 {
 	background-color: #FB2B55;
 	font-size: 48px;
@@ -38,11 +42,23 @@ visibility:hidden;
 	margin: 0;
 	padding: 10px;
 	overflow: hidden;
-	line-height:.70em;
+	line-height:.80em;
 	position: fixed;
-	width: auto;
+	width: 200px;
 	display:inline-block;
-	
+	z-index: 1;
+}
+
+#header:after
+{
+  content: "";
+  position: absolute;
+  left: 160px;
+  top: 0;
+  width: 90px;
+  height: 40px;
+  background-color: #A2DBFB;
+  z-index: -1;
 }
 
 @font-face {
@@ -51,12 +67,12 @@ visibility:hidden;
 }
 
 #spinme {
-	font-size: 50px;
+	font-size: 30px;
 	font-family: sunrise international;
 	color: #565657;
 	z-index: 1;
 	position: absolute;
-	left: 10%;
+	left: 15%;
 	bottom: 0%;
 	-webkit-transform: rotate(335deg);
 	-moz-transform: rotate(335deg);
@@ -79,9 +95,7 @@ visibility:hidden;
   font-family: coolvetica;
   font-size: 35px;
   text-align: center;
-  line-height: .70em;
-  margin: 0px;
-  margin-top: 20px;
+  line-height: .8em;
 }
 #flag:after {
   content: "";
@@ -98,15 +112,23 @@ visibility:hidden;
 #info {
 	color: #FFFFFF;
   font-family: sunrise international;
-  font-size: 25px;
+  font-size: 30px;
+  width: 20%;
   position: absolute;
-  bottom: 0%;
-  right: 20%;
+  top: 15%;
+  left: 78%;
   z-index: 1;
-  -webkit-transform: rotate(335deg);
-	-moz-transform: rotate(335deg);
-	-ms-transform: rotate(335deg);
-	-o-transform: rotate(335deg);
-	transform: rotate(335deg);
+}
+
+#plus {
+	position: absolute;
+	top: 15%;
+	right: 20%;
+	width: 30px;
+	height: auto;
+	visibility: hidden;
 }
 	
+.titletext {
+	color: #565657;
+}
